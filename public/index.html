@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Test</title>
+  <link rel="stylesheet" 
+  type="text/css"  href="style.css">
+  <head>
+    <body>
+      <div class="app">
+        <div class="screen join-screen active">
+          <div class="form">
+            <h2>Joined Chatroom</h2>
+            <div class="form-input">
+              <label>username</label>
+              <input type="text" id="Username">
+            </div>
+            <div class="form-input">
+              <button id="join-user">Join</button>
+            </div>
+          </div>
+        </div>
+          <div class="screen chat-screen">
+            <div class="header">
+              <div class="logo">chatroom</div>
+              <button id="exit-chat">Exit</button>
+            </div>         
+            <div class="messages">
+            </div>
+            <div class="type-box">
+              <input type="text" id="message-input">
+              <button id="send-message">Send</button>
+            </div>
+          </div>
+      </div>
+      
+      <script type="text/javascript" src="socket.io/socket.io.js"></script>
+      <script type="text/javascript" src="code.js"></script>
+    </body>
+  </head>
+</html>
