@@ -12,8 +12,8 @@ const app = document.quarySelector(".app");
     }
     socket.emit("newuser", username);
     uname = username;
-    app.quarySelector('join-screen').classList.remove("active");
-    app.quarySelector('chat-screen').classList.add("active");
+    app.quarySelector('.join-screen').classList.remove("active");
+    app.quarySelector('.chat-screen').classList.add("active");
   });
 
   app.quarySelector(".chat-screen #send-message").addEventListener("click", function(){
